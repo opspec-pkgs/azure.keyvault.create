@@ -25,8 +25,8 @@ run:
     pkg: { ref: github.com/opspec-pkgs/azure.keyvault.create#VERSION }
     inputs: 
       subscriptionId:
-      azureUsername:
-      azurePassword:
+      loginId:
+      loginSecret:
       name:
       resourceGroup:
       # begin optional args
@@ -36,6 +36,9 @@ run:
       enabledForTemplateDeployment:
       noSelfPerms:
       sku:
+      loginTenantId:
+      loginType:
+      tags:
       # end optional args
 ```
 
