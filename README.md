@@ -20,26 +20,25 @@ opctl run github.com/opspec-pkgs/azure.keyvault.create#VERSION
 ## compose
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/azure.keyvault.create#VERSION }
-    inputs: 
-      subscriptionId:
-      loginId:
-      loginSecret:
-      name:
-      resourceGroup:
-      # begin optional args
-      location:
-      enabledForDeployment:
-      enabledForDiskEncryption:
-      enabledForTemplateDeployment:
-      noSelfPerms:
-      sku:
-      loginTenantId:
-      loginType:
-      tags:
-      # end optional args
+op:
+  pkg: { ref: github.com/opspec-pkgs/azure.keyvault.create#VERSION }
+  inputs: 
+    subscriptionId:
+    loginId:
+    loginSecret:
+    name:
+    resourceGroup:
+    # begin optional args
+    location:
+    enabledForDeployment:
+    enabledForDiskEncryption:
+    enabledForTemplateDeployment:
+    noSelfPerms:
+    sku:
+    loginTenantId:
+    loginType:
+    tags:
+    # end optional args
 ```
 
 # Support
